@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body{
+	margin: 0;
+	height: 100vh;
+	font-family: Kumbh Sans, serif;
+	background-image: linear-gradient(to bottom right, hsl(273, 75%, 66%),  hsl(240, 73%, 65%));
+	font-size: 12px;
+	color:  hsl(237, 12%, 33%);
+}
+
+
+
+#maincard{ 
+	background-color: white;
+	display: flex;
+	width: 62.5vw;
+	height: 62.5vh;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 20px;
+}
+
+#left{
+	background-image:url('images/bg-pattern-desktop.svg');
+	background-size: 170% 170%;
+	background-repeat: no-repeat;
+	background-attachment: local;
+	background-position: right 10vw bottom -15vh;
+	flex: 50%;
+	position: relative;
+	overflow: hidden;
+}
+#right{
+flex: 50%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+	padding: 40px 70px 40px 5px;
+	box-sizing: border-box;
+}
+
+#faq{
+	margin: 0;
+}
+#divs{
+		border-bottom: 1px solid hsl(240, 5%, 91%);
+		padding-bottom: 10px;
+}
+[id^=q]:hover{
+	color: red;
+	cursor: pointer;
+}
+
+[id^=q] img{
+	float: right;
+}
+[id^=a] {
+display: none;
+}
+
+
+#womanonline{
+	position: absolute;
+left: -60px;
+top: 20%;
+width: 80%;
+overflow: hidden;
+}
+#illusbox{
+	position: absolute;
+	top: 46%;
+	left: 13.7%;
+	z-index: 1;
+	width: 140px;
+}
+
+@media screen and (max-width: 375px) {
+
+	#maincard{
+		
+		width: 90vw;
+		height: 60vh;
+		margin:0;
+		padding:0;
+		box-sizing: border-box;
+		flex-direction: column;
+	}
+	#left{
+		background-image: url('images/bg-pattern-mobile.svg');
+		background-size: 80% 80%;
+		background-position: top center;
+		position: relative;
+		overflow: visible;
+		flex: 30%;
+		
+	}
+	#womanonline{
+		top: -87%;
+		left: 13%;
+		width: 74%;	}
+	#right{
+		padding: 0px 25px 35px 25px;
+		flex: 70%;
+	
+	}
+	#illusbox{
+		display: none;
+	}
+	#faq{
+		text-align: center;
+	}
+}
